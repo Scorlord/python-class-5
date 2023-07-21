@@ -1,5 +1,4 @@
 import random
-from app_cli import *
 from core.errors import *
 from core.shoppinglist import *
 from core.items import *
