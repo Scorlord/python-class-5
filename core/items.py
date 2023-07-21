@@ -3,8 +3,6 @@ import random
 
 from core.errors import *
 from core.shoppinglist import *
-from app_cli import *
-from core.appengine import AppEngine
 
 class Item:
     def __init__(self, name, price):
