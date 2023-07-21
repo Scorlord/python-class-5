@@ -40,6 +40,7 @@ class AppCLI:
             self.app_engine.process_del_item(cmd)
         else:
             self.message = f'"{cmd}" is not a valid command.'
+            
 
     def process_ask(self):
         q =random.randint(0, len(self.app_engine.shopping_list.list))
@@ -47,7 +48,8 @@ class AppCLI:
         if q<len(self.app_engine.shopping_list.list):
             self.app_engine.correct_answer = self.app_engine.shopping_list.get_item_price(q)
         else:
-           self.correct_answer = self.app_engine.shopping_list.get_total_price()
+           self.app_engine.correct_answer = self.app_engine.shopping_list.get_total_price()
+        
 
     def process_show(self, cmd):
         what = cmd[ 5: ]
