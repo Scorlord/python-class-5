@@ -1,8 +1,8 @@
 import random
-from core.shoppinglist import *
+from app_cli import *
 from core.errors import *
 from core.shoppinglist import *
-from core.items import *
+import core.items
 
 class AppEngine:
     def __init__(self, shoppingList = None, items = None):
