@@ -1,7 +1,7 @@
+import random
 from core.errors import *
 from core.items import *
-import random
-from core.appengine import AppEngine
+
 
 class ShoppingList:
     def __init__(self, size = None, quantities = None, item_pool = None):
