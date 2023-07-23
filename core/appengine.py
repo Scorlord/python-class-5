@@ -49,6 +49,8 @@ class AppEngine:
         return self.message
 
     def process_del_item(self, cmd):
-        item_name = cmd[4: ]
-        self.items.remove_item( item_name )
-        self.message =f'{item_name} removed successfully.'
+        try:
+            item_name = cmd[4:]
+            self.items.remove_item(item_name)
+        except NonExistingItemError as e:
+            print(e)
